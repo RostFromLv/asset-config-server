@@ -29,7 +29,7 @@ spring:
     user: ${spring.datasource.username}
     password: ${spring.datasource.password}
   datasource:
-    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/workers}
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/second-service}
     username: postgres
     password: root
     driver-class-name: org.postgresql.Driver
