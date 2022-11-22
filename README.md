@@ -1,1 +1,1 @@
-# configuration-server
+# asset-configuration-server
