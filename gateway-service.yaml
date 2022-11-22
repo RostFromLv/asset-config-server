@@ -14,7 +14,7 @@ spring:
     sender:
       type: web
   application:
-    name: gateway
+    name: gateway-service
   cloud:
     gateway:
       routes:
