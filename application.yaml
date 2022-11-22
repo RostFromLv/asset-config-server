@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  appication:
+    name: any-server
+  jpa:
+    hibernate:
+      ddl-auto: none
+  properties:
+    hibernate:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+  application:
+    name: any-service
+  flyway:
+    enabled: false
+    baseline-on-migrate: true
+    locations: classpath:db.migration
+    url: ${spring.datasource.url}
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/any}
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
