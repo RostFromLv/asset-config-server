@@ -27,12 +27,12 @@ spring:
         - id: second-service
           uri: ${SECOND_SERVICE:http://localhost:8081}
           predicates:
-            - Path=/api/v1/second/**
-    discovery:
-      client:
-        simple:
-          instances:
-            - first-service:
-                uri: ${FIRST_SERVICE:http://localhost:8080}
-            - second-service:
-                uri: ${SECOND_SERVICE:http://localhost:8081}
+             - Path=/api/v1/second/**
+#     discovery:
+#       client:
+#         simple:
+#           instances:
+#             - first-service:
+#                 uri: ${FIRST_SERVICE:http://localhost:8080}
+#             - second-service:
+#                 uri: ${SECOND_SERVICE:http://localhost:8081}
